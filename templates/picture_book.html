@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- 画像から直接解説画面に遷移（仮） -->
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/picture_book.css') }}">
+        <title>危険生物一覧</title>
+    </head>
+
+    <body>
+        <div id="wrap">
+
+            <h1 class="f-big"><a href="/return/{{key}}">ABUNATOR</a></h1>
+            <hr size="2" color="#DB1D32" noshade/>
+            
+            <h1>危険生物一覧</h1>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 1>
+                            <input type="image" src="../static/imgs/1.png" style="width: 300px;"><br>
+                            チャドクガ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 2>
+                            <input type="image" src="../static/imgs/2.png" style="width: 300px;">
+                            <br>ヒトスジシマカ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 3>
+                            <input type="image" src="../static/imgs/3.png" style="width: 300px;">
+                            <br>アオバアリガタハネカクシ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 4>
+                            <input type="image" src="../static/imgs/4.png" style="width: 300px;">
+                            <br>オオスズメバチ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 5>
+                            <input type="image" src="../static/imgs/5.png" style="width: 300px;">
+                            <br>アカウシアブ
+                        </form>
+                        </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 6>
+                            <input type="image" src="../static/imgs/6.png" style="width: 300px;">
+                            <br>タイコウチ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 7>
+                            <input type="image" src="../static/imgs/7.png" style="width: 300px;">
+                            <br>アタマジラミ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 8>
+                            <input type="image" src="../static/imgs/8.png" style="width: 300px;">
+                            <br>ネコノミ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 9>
+                            <input type="image" src="../static/imgs/9.png" style="width: 300px;">
+                            <br>イヌノミ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 10>
+                            <input type="image" src="../static/imgs/10.png" style="width: 300px;">
+                            <br>トコジラミ
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 11>
+                            <input type="image" src="../static/imgs/11.png" style="width: 300px;">
+                            <br>ツキノワグマ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 12>
+                            <input type="image" src="../static/imgs/12.png" style="width: 300px;">
+                            <br>エゾヒグマ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 13>
+                            <input type="image" src="../static/imgs/13.png" style="width: 300px;">
+                            <br>ニホンザル
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 14>
+                            <input type="image" src="../static/imgs/14.png" style="width: 300px;">
+                            <br>アライグマ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 15>
+                            <input type="image" src="../static/imgs/15.png" style="width: 300px;">
+                            <br>クマネズミ
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 16>
+                            <input type="image" src="../static/imgs/16.png" style="width: 300px;">
+                            <br>ニホンマムシ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 17>
+                            <input type="image" src="../static/imgs/17.png" style="width: 300px;">
+                            <br>ハブ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 18>
+                            <input type="image" src="../static/imgs/18.png" style="width: 300px;">
+                            <br>スッポン
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 19>
+                            <input type="image" src="../static/imgs/19.png" style="width: 300px;">
+                            <br>カミツキガメ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 20>
+                            <input type="image" src="../static/imgs/20.png" style="width: 300px;">
+                            <br>ギギ
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 21>
+                            <input type="image" src="../static/imgs/21.png" style="width: 300px;">
+                            <br>アカザ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 22>
+                            <input type="image" src="../static/imgs/22.png" style="width: 300px;">
+                            <br>アカエイ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 23>
+                            <input type="image" src="../static/imgs/23.png" style="width: 300px;">
+                            <br>ミノカサゴ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 24>
+                            <input type="image" src="../static/imgs/24.png" style="width: 300px;">
+                            <br>アカハライモリ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 25>
+                            <input type="image" src="../static/imgs/25.png" style="width: 300px;">
+                            <br>トビズムカデ
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 26>
+                            <input type="image" src="../static/imgs/26.png" style="width: 300px;">
+                            <br>カバキコマチグモ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 27>
+                            <input type="image" src="../static/imgs/27.png" style="width: 300px;">
+                            <br>ヤマビル
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 28>
+                            <input type="image" src="../static/imgs/28.png" style="width: 300px;">
+                            <br>ヤマトマダニ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 29>
+                            <input type="image" src="../static/imgs/29.png" style="width: 300px;">
+                            <br>アンドンクラゲ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 30>
+                            <input type="image" src="../static/imgs/30.png" style="width: 300px;">
+                            <br>カツオノエボシ
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 31>
+                            <input type="image" src="../static/imgs/31.png" style="width: 300px;">
+                            <br>ウンバチイソギンチャク
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 32>
+                            <input type="image" src="../static/imgs/32.png" style="width: 300px;">
+                            <br>アンボイナ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 33>
+                            <input type="image" src="../static/imgs/33.png" style="width: 300px;">
+                            <br>タガヤサンミナシ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 34>
+                            <input type="image" src="../static/imgs/34.png" style="width: 300px;">
+                            <br>ヒョウモンダコ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 35>
+                            <input type="image" src="../static/imgs/35.png" style="width: 300px;">
+                            <br>オニヒトデ
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 36>
+                            <input type="image" src="../static/imgs/36.png" style="width: 300px;">
+                            <br>ラッパウニ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 37>
+                            <input type="image" src="../static/imgs/37.png" style="width: 300px;">
+                            <br>ガンガゼ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 38>
+                            <input type="image" src="../static/imgs/38.png" style="width: 300px;">
+                            <br>イエダニ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 39>
+                            <input type="image" src="../static/imgs/39.png" style="width: 300px;">
+                            <br>ビゼンダニ
+                        </form>
+                    </td>
+                    <td>
+                        <form method = "post" action = "/picture_book/{{key}}">
+                            <input type="hidden" name = "no" value = 40>
+                            <input type="image" src="../static/imgs/40.png" style="width: 300px;">
+                            <br>コナヒョウダニ
+                        </form>
+                    </td>
+                </tr>
+            </table>
+
+        <div class="box01">
+            <a href= "/return/{{key}}" class="start">start画面に戻る</a>
+        </div>
+
+        </div>
+        <!-- </form> -->
+        <!-- 昇順、降順のソート
+        <a href="result.html"><img src="../imgs/13.png" alt="ニホンザル"></a>
+
+        no_list = [1, 2, 3, 4 5]
+        no_list.sort()
+        no_list.sort(reverse = True)
+
+        -->
+
+    </body>
+
+</html>

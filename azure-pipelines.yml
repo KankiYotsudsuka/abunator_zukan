@@ -60,6 +60,20 @@ stages:
       displayName: 'Upload package'
       artifact: drop
 
+- stage: Test
+  displayName: 'Testing app'
+  jobs:
+  - job: TestJob
+    steps:
+    - task: UsePythonVersion@0
+      displayName: 'Use Python $(pythonVersion)' 
+      inputs:
+        versionSpec: '$(pythonVersion)'            
+    - script: |
+        python -m pip install flake8
+        flake8 app.py
+    displayName: 'Run lint tests'
+
 - stage: Deploy
   displayName: 'Deploy Web App'
   dependsOn: Build

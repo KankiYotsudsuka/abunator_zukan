@@ -13,7 +13,6 @@ sys.path.append("/abunator_zukan/")
 #図鑑用クラスのインポート
 import pic_book
 
-#
 #図鑑へのリンク
 @app.route('/pic_book/<key>',methods = ['GET'] )
 def zukan(key):

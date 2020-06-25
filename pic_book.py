@@ -5,7 +5,6 @@ import sys
 sys.path.append("/abunator_zukan/")
 import psycopg2
 
-
 users = "postgres"
 dbnames = "Abunator"
 passwords = "postgres"

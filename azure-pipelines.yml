@@ -70,8 +70,9 @@ stages:
       inputs:
         versionSpec: '$(pythonVersion)'            
     - script: |
-        python -m pip install flake8
-        flake8 app.py
+        python -m pip install pytest
+        python -m pip install psycopg2
+        python -m pip pytest test_zukan.py
     displayName: 'Run lint tests'
 
 - stage: Deploy

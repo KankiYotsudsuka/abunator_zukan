@@ -75,7 +75,7 @@ def result(no):
             cur.execute('select * from pic_book where no = ' + str(no))
             results = cur.fetchall()
     for i in results:
-#        no = str(i[0])
+        no = str(i[0])
         name = str(i[1])
         dealing = str(i[2])
         rank = str(i[3])

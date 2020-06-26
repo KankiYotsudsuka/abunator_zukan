@@ -35,12 +35,16 @@ def kaisetu(key):
         no = request.form['no']
     else:
         no = "13"
+    resultList = pic_book.result(no)
+    name = resultList[1]
+    dealing = resultList[2]
+    rank = resultList[3] 
     return render_template('/explanation.html',\
-    no = no,\
-    name = pic_book.resName(no),\
-    dealing = pic_book.resDealing(no),\
-    rank = pic_book.resRank(no),\
-    key = linker)
+        no = no,\
+        name = name,\
+        dealing = dealing,\
+        rank = rank,\
+        key = linker)
 
 @app.route('/refer/<key>', methods = ['GET'])
 def referrence(key):
@@ -48,8 +52,9 @@ def referrence(key):
         linker = key[0:13] + 'e'
         name = key[14:]
         no = pic_book.resNo(name)
-        dealing = pic_book.resDealing(no)
-        rank = pic_book.resRank(no)
+        resultList = pic_book.result(no)
+        dealing = resultList[2]
+        rank = resultList[3] 
         return render_template('/explanation.html',\
         no = no,\
         name = name,\

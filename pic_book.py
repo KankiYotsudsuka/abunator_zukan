@@ -67,3 +67,18 @@ def resNo(name):
         num = i[0]
         break
     return int(num)
+
+def result(no):
+    with get_connection() as conn:
+        with conn.cursor() as cur:
+            #SQL文実行
+            cur.execute('select * from pic_book where no = ' + str(no))
+            results = cur.fetchall()
+    for i in results:
+#        no = str(i[0])
+        name = str(i[1])
+        dealing = str(i[2])
+        rank = str(i[3])
+        resultList = [no,name,dealing,rank]
+        break
+    return resultList
